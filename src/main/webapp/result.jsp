@@ -8,23 +8,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>List CDI</title>
 <style>
-body { background: #FFFFDD; 
+body, input { background: #FFFFDD; 
 	font-family: verdana; font-size: 24px; font-weight: 300;
-}
-h3 { font-family: verdana; font-size: 24px; font-weight: 300; }
-input { font-family: verdana; font-size: 24px; font-weight: 300;
 }
 </style>
 </head>
-
 <body>
-	
+
 <center>
-<h3>List CDI</h3>
-<form method="post"" action="HelloCDI">
-Name: <input type="text" name="str" value="Jack"><br/><br/>
-<input type="submit"" value="Send">
-</form>
+<h1>Hello CDI 5</h1>
+<c:forEach var="name" items="${list}">
+<li><c:out value="${name}"/><br/>
+</c:forEach>
 
 </body>
 </html>

@@ -25,11 +25,10 @@ public class HelloCDI extends HttpServlet {
         
 		List<String> list = new ArrayList<String>();
 		String str = req.getParameter("str");
-        list = listCDI.listNames(str);
+        	list = listCDI.listNames(str);
 
 		req.setAttribute("list", list); 
 		req.getRequestDispatcher("result.jsp").forward(req, resp); 
-        
     }
 
 }

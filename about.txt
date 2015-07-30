@@ -1,0 +1,2 @@
+project: farinha
+tags: java, web, jsp, cdi, beans

@@ -1,2 +1,2 @@
-# java
-java projects
+# Scripts
+javascript, java, php, c#, python, perl

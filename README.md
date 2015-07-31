@@ -1,2 +1,4 @@
 # Scripts
-javascript, java, php, c#, python, perl
+java, php, c#, python, perl
+html, css, javascript, xml
+mysql, sqlite

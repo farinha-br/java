@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="keywords" content="github, javascript, math, financial, tvm">
+<meta name="robots" content="index, follow"> 
+<title>Calculate Interest</title>
+
+<script>
+function retI(pv, pmt, n) {
+	i = 0.0001;
+	for (k=0; k<=5; k++) {
+	       i = i-(pmt*(1-Math.pow(1 + i,-n))/i-pv)/(((-1+Math.pow(1+i,-1- n)*(1+i+i*n))*pmt)/(i*i));   
+	}
+	i = Math.floor(i*10000)/100;
+        return(i);
+}
+function retPMT(pv, n, i) {
+	pmt = (pv*i)/(1 - Math.pow(1/(1+i),n));
+	pmt = Math.floor(pmt*100)/100;
+	return (pmt);
+}
+function calc(){
+	pv = document.getElementById('pv').value;
+	n = document.getElementById('n').value;
+	pmt = document.getElementById('pmt').value;
+
+	rs = retI(parseFloat(pv), parseFloat(pmt), parseInt(n));
+	document.getElementById("i").value = rs+"%";
+}
+function clearInput() {
+	document.getElementById('pv').value = "";
+	document.getElementById('n').value = "";
+	document.getElementById('pmt').value = "";
+	document.getElementById('i').value = "";
+}
+</script>
+
+<style>
+body { margin: 0 auto; width: 720px; line-height: 30px; 
+	font-family: verdana, sans-serif; font-size: 16px; }
+input:text { font-family: verdana, sans-serif; font-size: 16px; 
+	border: solid black 1px;  }
+input:button { font-size: 16px; }
+</style>
+
+</head>
+
+<body>
+<br/><br/>
+<h3>Calculate Interest</h3>
+<hr/><br/>
+
+PV: &nbsp; &nbsp; <input type=text name="pv" id="pv" size=12 maxlength=12 value="500.00"><br/>
+N: &nbsp; &nbsp; &nbsp; <input type=text name="n" id="n" size=2 maxlength=2 value="5"><br/>
+PMT: &nbsp; <input type=text name="pmt" id="pmt" size=12 maxlength=12 value="110.00"><br/>
+<br/>
+<input type=button value="Calculate i" onclick="calc();">
+<input type=button value="Clear" onclick="clearInput();">
+<br/><br/>
+i (interest): &nbsp; <input type=text readonly name="i" id="i" size=10 maxlenght=10>
+
+<br/><br/><hr/>
+
+</body>
+</html>

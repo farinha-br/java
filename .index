@@ -1,5 +1,13 @@
-search: farinha, farinha-pr, github, git, maven, web, java, jsp, jstl, cdi, jee, beans
+search: farinha, farinha-pr, scripts, github, git, maven, web, java, jsp, jstl, cdi, jee, beans
+
 location: brazil
+
 additional: html, css, javascript, php, python, perl, c#, asp.net, mysql, jdbc
 
 
+scripts:
+	java-cdi
+	php-mvc
+	php-cart
+	javascript-fin
+	html-template

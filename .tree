@@ -1,0 +1,55 @@
+|   .index
+|   .tree
+|   about.txt
+|   README.md
+|   tree.wxx
+|   
++---html-template
+|       style.css
+|       three-part-divs.html.html
+|       tools.png
+|       
++---java-cdi
+|   \---src
+|       \---main
+|           +---java
+|           |   \---com
+|           |           HelloCDI.java
+|           |           ListCDI.java
+|           |           
+|           \---webapp
+|               |   index.jsp
+|               |   result.jsp
+|               |   
+|               +---META-INF
+|               |       context.xml
+|               |       
+|               \---WEB-INF
+|                       beans.xml
+|                       web.xml
+|                       
++---js-fin
+|       index.html
+|       
++---php-cart
+|       cart.php
+|       delete.php
+|       index.php
+|       rem.php
+|       shop.php
+|       
+\---php-mvc
+    |   index.html
+    |   
+    +---.controller
+    |       main.php
+    |       
+    +---.model
+    |       list.php
+    |       
+    +---.view
+    |       view.php
+    |       
+    \---shop
+            shop.php
+            

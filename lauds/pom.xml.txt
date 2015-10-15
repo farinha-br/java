@@ -1,0 +1,4 @@
+add dependencies for mysql driver
+and jstl
+
+

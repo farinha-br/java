@@ -1,115 +1,115 @@
 Listagem de caminhos de pasta para o volume WIN7_OS
 O n£mero de s‚rie do volume ‚ 4A00004A A82D:1C47
 C:.
-³   .index
-³   .tree
-³   about.txt
-³   README.md
-³   
-ÃÄÄÄhtml-template
-³       index.html
-³       style.css
-³       tools.png
-³       
-ÃÄÄÄjava-cdi
-³   ÀÄÄÄsrc
-³       ÀÄÄÄmain
-³           ÃÄÄÄjava
-³           ³   ÀÄÄÄcom
-³           ³           HelloCDI.java
-³           ³           ListCDI.java
-³           ³           
-³           ÀÄÄÄwebapp
-³               ³   index.jsp
-³               ³   result.jsp
-³               ³   
-³               ÃÄÄÄMETA-INF
-³               ³       context.xml
-³               ³       
-³               ÀÄÄÄWEB-INF
-³                       beans.xml
-³                       web.xml
-³                       
-ÃÄÄÄjs-fin
-³       index.html
-³       
-ÃÄÄÄlauds
-³   ³   .index
-³   ³   db.txt
-³   ³   pom.xml.txt
-³   ³   
-³   ÀÄÄÄsrc
-³       ÀÄÄÄmain
-³           ÃÄÄÄjava
-³           ³   ³   Delete.java
-³           ³   ³   Insert.java
-³           ³   ³   ListDB.java
-³           ³   ³   People.java
-³           ³   ³   Save.java
-³           ³   ³   Search.java
-³           ³   ³   UpdDB.java
-³           ³   ³   
-³           ³   ÀÄÄÄcom
-³           ³           Connect.java
-³           ³           
-³           ÃÄÄÄresources
-³           ³       db.properties
-³           ³       
-³           ÀÄÄÄwebapp
-³               ³   add.jsp
-³               ³   index.jsp
-³               ³   list.jsp
-³               ³   update.jsp
-³               ³   
-³               ÃÄÄÄMETA-INF
-³               ³       MANIFEST.MF
-³               ³       
-³               ÀÄÄÄWEB-INF
-³                       web.xml
-³                       
-ÃÄÄÄphp-cart
-³       cart.php
-³       delete.php
-³       index.php
-³       rem.php
-³       shop.php
-³       
-ÃÄÄÄphp-mvc
-³   ³   index.html
-³   ³   
-³   ÃÄÄÄ.controller
-³   ³       main.php
-³   ³       
-³   ÃÄÄÄ.model
-³   ³       list.php
-³   ³       
-³   ÃÄÄÄ.view
-³   ³       view.php
-³   ³       
-³   ÀÄÄÄshop
-³           shop.php
-³           
-ÀÄÄÄservice
-    ³   .index
-    ³   
-    ÃÄÄÄclient
-    ³       .index
-    ³       Decryption.java
-    ³       Encryption.java
-    ³       Send.java
-    ³       
-    ÀÄÄÄserver
-        ³   .index
-        ³   
-        ÀÄÄÄcrypt
-            ÀÄÄÄsrc
-                ÀÄÄÄmain
-                    ÃÄÄÄjava
-                    ³       Decryption.java
-                    ³       Encryption.java
-                    ³       Service.java
-                    ³       
-                    ÀÄÄÄwebapp
-                        ÀÄÄÄWEB-INF
+|   .index
+|   .tree
+|   about.txt
+|   README.md
+|   
++---html-template
+|       index.html
+|       style.css
+|       tools.png
+|       
++---java-cdi
+|   \---src
+|       \---main
+|           +---java
+|           |   \---com
+|           |           HelloCDI.java
+|           |           ListCDI.java
+|           |           
+|           \---webapp
+|               |   index.jsp
+|               |   result.jsp
+|               |   
+|               +---META-INF
+|               |       context.xml
+|               |       
+|               \---WEB-INF
+|                       beans.xml
+|                       web.xml
+|                       
++---js-fin
+|       index.html
+|       
++---lauds
+|   |   .index
+|   |   db.txt
+|   |   pom.xml.txt
+|   |   
+|   \---src
+|       \---main
+|           +---java
+|           |   |   Delete.java
+|           |   |   Insert.java
+|           |   |   ListDB.java
+|           |   |   People.java
+|           |   |   Save.java
+|           |   |   Search.java
+|           |   |   UpdDB.java
+|           |   |   
+|           |   \---com
+|           |           Connect.java
+|           |           
+|           +---resources
+|           |       db.properties
+|           |       
+|           \---webapp
+|               |   add.jsp
+|               |   index.jsp
+|               |   list.jsp
+|               |   update.jsp
+|               |   
+|               +---META-INF
+|               |       MANIFEST.MF
+|               |       
+|               \---WEB-INF
+|                       web.xml
+|                       
++---php-cart
+|       cart.php
+|       delete.php
+|       index.php
+|       rem.php
+|       shop.php
+|       
++---php-mvc
+|   |   index.html
+|   |   
+|   +---.controller
+|   |       main.php
+|   |       
+|   +---.model
+|   |       list.php
+|   |       
+|   +---.view
+|   |       view.php
+|   |       
+|   \---shop
+|           shop.php
+|           
+\---service
+    |   .index
+    |   
+    +---client
+    |       .index
+    |       Decryption.java
+    |       Encryption.java
+    |       Send.java
+    |       
+    \---server
+        |   .index
+        |   
+        \---crypt
+            \---src
+                \---main
+                    +---java
+                    |       Decryption.java
+                    |       Encryption.java
+                    |       Service.java
+                    |       
+                    \---webapp
+                        \---WEB-INF
                                 web.xml
                                 

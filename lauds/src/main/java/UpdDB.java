@@ -26,26 +26,26 @@ public class UpdDB extends HttpServlet {
   
              try { 
 				
-				  int id = Integer.parseInt(request.getParameter("id")); 
+				  int rid = Integer.parseInt(request.getParameter("id")); 
 				  connection = Connect.getConnection();
 				  
 				  PreparedStatement st = connection.prepareStatement("select * from test where id=?");  
-				  st.setInt(1, id);
+				  st.setInt(1, rid);
                   ResultSet rs = st.executeQuery();  
 				  List<People> folks = new ArrayList<People>();
 				  
-				  while (rs.next()) { 
-						People people = new People();
-						people.setId(rs.getInt("id"));  
-						people.setName(rs.getString("name"));  
-						people.setPlace(rs.getString("place"));  
-						folks.add(people);
-				  }
-
+				  rs.next();
+				  int id = rs.getInt("id");  
+				  String name = rs.getString("name");  
+				  String place = rs.getString("place");  
+						
 				  rs.close();
 				  st.close();
 
-			      request.setAttribute("folks", folks); 
+			      request.setAttribute("id", id); 
+				  request.setAttribute("name", name); 
+				  request.setAttribute("place", place); 
+				  
 			      request.getRequestDispatcher("/update.jsp").forward(request, response); 
 
               } catch (SQLException e) {  

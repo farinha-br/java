@@ -14,21 +14,21 @@
 
 <h3>Update DB</h3>
 
-<c:forEach items="${folks}" var="p"> 
+
 <form method=post action="save">
-<input type=hidden value="${p.id}" name="id">
-Name: <input type=text value="${p.name}" name="name"><br/>
-Place:  <input type=text value="${p.place}" name="place"><br/>
+<input type=hidden value="${id}" name="id">
+Name: <input type=text value="${name}" name="name"><br/>
+Place:  <input type=text value="${place}" name="place"><br/>
 <input type=submit value="Update">
 </form>
 
 <br/><br/>
 
 <form method=post action="delete">
-<input type=hidden value="${p.id}" name="id">
+<input type=hidden value="${id}" name="id">
 <input type=submit value="Delete">
 </form>
-</c:forEach> 
+
 
 </body>  
 </html>  

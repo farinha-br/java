@@ -1,24 +1,5 @@
-/*
-Navicat MySQL Data Transfer
+use test;
 
-Source Server         : mysql
-Source Server Version : 50505
-Source Host           : localhost:3306
-Source Database       : test
-
-Target Server Type    : MYSQL
-Target Server Version : 50505
-File Encoding         : 65001
-
-Date: 2017-06-19 09:06:59
-*/
-
-SET FOREIGN_KEY_CHECKS=0;
-
--- ----------------------------
--- Table structure for `people`
--- ----------------------------
-DROP TABLE IF EXISTS `people`;
 CREATE TABLE `people` (
   `id` mediumint(5) NOT NULL AUTO_INCREMENT,
   `name` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -26,9 +7,7 @@ CREATE TABLE `people` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- ----------------------------
--- Records of people
--- ----------------------------
+
 INSERT INTO `people` VALUES ('9', 'Emma', 'New York');
 INSERT INTO `people` VALUES ('10', 'Noah', 'Los Angeles');
 INSERT INTO `people` VALUES ('11', 'Olivia ', 'Chicago');

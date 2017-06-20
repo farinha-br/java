@@ -1,0 +1,33 @@
+body { 
+	font-family: 'open sans', arial;
+	font-size: 16px;
+	padding-left: 200px;
+}
+
+a, a:visited { text-decoration: none; color: black; }
+
+table {
+    border-collapse: collapse;
+}
+
+.menu {
+	font-family: 'open sans', arial;
+	font-size: 14px;
+	padding-right: 30px;
+}
+
+#spage table, th, td {
+    border: 1px solid black;
+	padding: 5px;
+}
+
+#spage td:hover {
+	background-color: #FFDDCC;
+}
+
+#spage th {
+    text-align: left;
+}
+
+#spage tr:nth-child(odd)		{ background-color:#E1EEF6; }
+#spage tr:nth-child(even)		{ background-color:#fff; }

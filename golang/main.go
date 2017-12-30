@@ -3,8 +3,8 @@ package main
 import (
     "fmt"
     "net/http"
-	"time"
-	_ "github.com/go-sql-driver/mysql"
+    "time"
+    _ "github.com/go-sql-driver/mysql"
 )
 
 func loginPage(w http.ResponseWriter, r *http.Request) {
@@ -26,7 +26,7 @@ func makeHandler(fn func(http.ResponseWriter, *http.Request)) http.HandlerFunc {
 			fmt.Fprintln(w, html + "outdated" + htmlClose)
 			return
 		}
-
+		// add more time after each view
 		session.Values["logTime"] = time.Now().Unix()+600
 		session.Save(r, w)
 

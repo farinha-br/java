@@ -1,1 +1,6 @@
-GoLang login app with https, sessions, mysql, bcrypt
+GoLang login auth app with:
+
+  https, 
+  sessions, 
+  mysql, 
+  bcrypt

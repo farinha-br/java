@@ -1,3 +1,3 @@
 # Scripts
-javascript, java, php, c#<br/>
+javascript, java, php, c#, golang<br/>
 html, css

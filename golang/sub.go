@@ -77,7 +77,7 @@ var html = `
 body { 
 	margin: 0 auto;
 	width: 720px;
-	font-family: georgia, 'open sans', arial, verdana;
+	font-family: 'open sans', arial, verdana;
 	font-size: 16px;
 	line-height: 24px;
 	background: #FFEAD5;

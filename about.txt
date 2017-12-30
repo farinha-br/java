@@ -1,4 +1,4 @@
 project: farinha
-tags: java, php, mvc, web, jsp, cdi, beans
-status: building
+tags: javascript, java, php, mvc, web, jsp, golang, c#
+
 

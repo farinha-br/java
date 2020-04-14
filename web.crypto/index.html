@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head lang="pt-br">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="scripts.js"></script>
+<script src="gcm.js"></script>
+<style>
+body {
+	margin: 0 auto;	width: 720px;
+	font-family: 'open sans', arial, verdana;
+	font-size: 14px; line-height: 24px;
+}
+</style>
+</head>
+<body>
+
+<br/><br/>
+
+<input type="password" id="pswd" name="pswd" size=20 maxlength=20 onkeyup="calc_crc();" value="1234567">
+<input type="text" id="crc32" name="crc32" size="3"><br/>
+<textarea id="txt" name="txt" rows="25" cols="80">hello world</textarea>
+
+<br/>
+<input type="button" value="Encrypt" onclick="encrypt();">	
+<input type="button" value="Decrypt" onclick="decrypt();">	
+
+<script>
+
+var gcm = new gcm();
+
+function encrypt() {
+	gcm.encrypt(txt.value, pswd.value, function(crypted) {
+			txt.value = crypted;
+	});
+}
+
+function decrypt() {
+	gcm.decrypt(txt.value, pswd.value, function(plain) {
+			txt.value = plain;
+	});
+}
+
+</script>
+
+</body>
+</html>

@@ -1,7 +1,0 @@
-Run node.js with express and ejs within a webserver
-such as Apache HTTP Server
-
-place files in a folder within server docs root
-
-install npm files: express, path and ejs
-
